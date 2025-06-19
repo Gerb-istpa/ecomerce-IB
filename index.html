@@ -11,16 +11,22 @@
 <body>
     <!-- 🏗️ HEADER CON NAV INLINE-BLOCK -->
     <header class="header">
-        <div class="logo">
-            <img src="" alt="">
-            TechStore
+        <div class="header-content">
+            <div class="logo">
+                <img src="imagenes/gerbdevSinfondo.png" alt="">
+                <h2>TechStore</h2>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-item">Inicio</a>
+                <a href="#" class="nav-item">Productos</a>
+                <a href="#" class="nav-item">Ofertas</a>
+                <a href="#" class="nav-item">Contacto</a>
+                <a href="#" class="nav-item">Locales</a>
+                <a href="#" class="nav-item">Combos</a>
+
+
+            </nav>
         </div>
-        <nav class="nav">
-            <a href="#" class="nav-item">Inicio</a>
-            <a href="#" class="nav-item">Productos</a>
-            <a href="#" class="nav-item">Ofertas</a>
-            <a href="#" class="nav-item">Contacto</a>
-        </nav>
     </header>
     <!-- 📦 CONTENED<OR PRINCIPAL -->
     <div class="container">
@@ -73,24 +79,24 @@
                             <li class="feature-item">Teclado RGB retroiluminado</li>
                         </ul>
                     </div>
-                </div>
-                <!-- 🛒 SECCIÓN DE COMPRA -->
-                <div class="purchase-section">
-                    <div class="quantity-selector">
-                        <label for="quantity">Cantidad:</label>
-                        <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="5">
-                    </div>
+                    <!-- 🛒 SECCIÓN DE COMPRA -->
+                    <div class="purchase-section">
+                        <div class="quantity-selector">
+                            <label for="quantity">Cantidad:</label>
+                            <input type="number" id="quantity" class="quantity-input" value="1" min="1" max="5">
+                        </div>
 
-                    <button class="btn btn-primary" onclick="addToCart()">
-                        🛒 Agregar al Carrito
-                    </button>
-                    <button class="btn btn-secondary" onclick="addToWishlist()">
-                        ❤️ Lista de Deseos
-                    </button>
+                        <button class="btn btn-primary" onclick="addToCart()">
+                            🛒 Agregar al Carrito
+                        </button>
+                        <button class="btn btn-secondary" onclick="addToWishlist()">
+                            ❤️ Lista de Deseos
+                        </button>
 
-                    <div id="cart-message" class="hidden"
-                        style="margin-top: 15px; padding: 10px; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; color: #155724;">
-                        ✅ ¡Producto agregado al carrito!
+                        <div id="cart-message" class="hidden"
+                            style="margin-top: 15px; padding: 10px; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; color: #155724;">
+                            ✅ ¡Producto agregado al carrito!
+                        </div>
                     </div>
                 </div>
             </div>
