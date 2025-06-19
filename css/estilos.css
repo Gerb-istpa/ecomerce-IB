@@ -294,6 +294,185 @@ body {
                         }
                     }
                 }
+
+                /* 🛒 BOTONES Y CONTROLES */
+                .purchase-section {
+                    margin-top: 30px;
+                    /* ✅ MARGIN PARA SEPARAR */
+                    padding: 25px;
+                    /* ✅ PADDING PARA DESTACAR */
+                    background: #f8f9fa;
+                    border: 2px solid #dee2e6;
+                    /* ✅ BORDER PARA DEFINIR ÁREA */
+                    border-radius: 10px;
+
+                    .quantity-selector {
+                        margin-bottom: 20px;
+
+                        /* ✅ MARGIN PARA SEPARAR */
+                        /* display: block; ← Por defecto */
+                        label {
+                            display: inline-block;
+                            /* ✅ INLINE-BLOCK PARA ALINEAR CON INPUT */
+                            font-weight: bold;
+                            margin-right: 10px;
+                            /* ✅ MARGIN PARA SEPARAR */
+                            width: 80px;
+                            /* ✅ WIDTH PARA ALINEACIÓN */
+                        }
+
+                        .quantity-input {
+                            display: inline-block;
+                            /* ✅ INLINE-BLOCK PARA FLUJO HORIZONTAL */
+                            width: 80px;
+                            /* ✅ WIDTH CONTROLADO */
+                            padding: 8px 12px;
+                            /* ✅ PADDING PARA ÁREA CLICKEABLE */
+                            border: 2px solid #bdc3c7;
+                            /* ✅ BORDER PARA DEFINIR INPUT */
+                            border-radius: 5px;
+                            text-align: center;
+                        }
+                    }
+
+                    .btn {
+                        display: inline-block;
+                        /* ✅ INLINE-BLOCK PARA BOTONES EN LÍNEA */
+                        padding: 15px 30px;
+                        /* ✅ PADDING GENEROSO PARA ÁREA CLICKEABLE */
+                        margin: 10px 5px;
+                        /* ✅ MARGIN PARA SEPARAR BOTONES */
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        text-decoration: none;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        min-width: 150px;
+                        /* ✅ WIDTH MÍNIMO */
+                    }
+
+                    .btn-primary {
+                        background: #3498db;
+                        color: white;
+                        border: 2px solid #3498db;
+
+                        /* ✅ BORDER PARA EFECTO HOVER */
+                        &:hover {
+                            background: #2980b9;
+                            border-color: #2980b9;
+                            transform: translateY(-2px);
+                            /* Efecto que no afecta el box model */
+                        }
+                    }
+
+                    .btn-secondary {
+                        background: white;
+                        color: #3498db;
+                        border: 2px solid #3498db;
+
+                        /* ✅ BORDER PARA ESTILO OUTLINE */
+                        &:hover {
+                            background: #3498db;
+                            color: white;
+                        }
+                    }
+
+                    /* 🔍 ELEMENTOS CON DISPLAY: NONE PARA INTERACTIVIDAD */
+                    .hidden {
+                        display: none;
+                        /* ✅ DISPLAY NONE PARA OCULTAR */
+                    }
+                }
+
+            }
+        }
+
+        /* 📊 ESPECIFICACIONES TÉCNICAS */
+        .specs-table {
+            width: 100%;
+            /* ✅ WIDTH COMPLETO */
+            margin: 25px 0;
+            /* ✅ MARGIN PARA SEPARAR */
+            border-collapse: collapse;
+
+            /* display: table; ← Por defecto para table */
+
+
+            th,
+            td {
+                padding: 12px 15px;
+                /* ✅ PADDING PARA CELDAS LEGIBLES */
+                border: 1px solid hsl(13, 98%, 49%);
+                /* ✅ BORDER PARA SEPARAR CELDAS */
+                text-align: left;
+                /* display: table-cell; ← Por defecto */
+            }
+
+            th {
+                background: #067ef5;
+                font-weight: bold;
+                color: #2c3e50;
+            }
+        }
+
+        /* 💬 SECCIÓN DE COMENTARIOS */
+        .reviews-section {
+            margin-top: 40px;
+            /* ✅ MARGIN PARA SEPARAR */
+            padding: 30px;
+            /* ✅ PADDING PARA ESPACIADO INTERNO */
+            background: white;
+            border: 1px solid #dee2e6;
+            /* ✅ BORDER PARA DEFINIR SECCIÓN */
+            border-radius: 10px;
+
+            .review-item {
+                margin-bottom: 20px;
+                /* ✅ MARGIN PARA SEPARAR REVIEWS */
+                padding: 20px;
+                /* ✅ PADDING PARA ESPACIADO INTERNO */
+                background: #f8f9fa;
+                border-left: 4px solid #3498db;
+                /* ✅ BORDER DECORATIVO */
+                border-radius: 5px;
+
+                /* display: block; ← Por defecto */
+                .reviewer-name {
+                    font-weight: bold;
+                    color: #2c3e50;
+                    margin-bottom: 5px;
+                    /* ✅ MARGIN PARA SEPARAR */
+                    /* display: block; ← Por defecto */
+                }
+
+                .review-rating {
+                    display: inline-block;
+                    /* ✅ INLINE-BLOCK PARA CONTROL */
+                    background: #f39c12;
+                    color: white;
+                    padding: 3px 8px;
+                    /* ✅ PADDING PEQUEÑO */
+                    border-radius: 12px;
+                    font-size: 0.8em;
+                    margin-bottom: 8px;
+                    /* ✅ MARGIN PARA SEPARAR */
+                }
+
+                .show-more-content {
+                    display: none;
+                    /* ✅ INICIALMENTE OCULTO */
+                    margin-top: 15px;
+                    /* ✅ MARGIN CUANDO SE MUESTRA */
+                    padding: 15px;
+                    /* ✅ PADDING PARA DESTACAR */
+                    background: #e8f6f3;
+                    border: 1px solid #27ae60;
+                    /* ✅ BORDER PARA DESTACAR */
+                    border-radius: 8px;
+                }
             }
         }
     }
